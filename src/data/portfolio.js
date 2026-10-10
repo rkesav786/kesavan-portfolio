@@ -11,7 +11,7 @@ export const profile = {
   phoneHref: 'tel:+918300976629',
   linkedin: 'https://www.linkedin.com/in/kesavan-r-12bb9a221/',
   github: 'https://github.com/rkesav786',
-  resume: '/Kesavan_R_Resume.docx', // file lives in /public
+  resume: '/Resume_Kesavan.docx', // file lives in /public
   photo: '/profile.jpg', // file lives in /public
   headline: ['Frontend developer building', 'fast, scalable web apps.'],
   summary:
@@ -158,7 +158,7 @@ export const projects = [
     ],
     tags: ['Next.js', 'React.js', 'HLS.js', 'AWS S3', 'CloudFront'],
     demo: '',
-    repo: 'https://github.com/kesavan-r',
+    repo: 'https://github.com/rkesav786',
   },
   {
     id: 'microfrontend',
@@ -174,7 +174,7 @@ export const projects = [
     ],
     tags: ['React.js', 'Webpack 5', 'Module Federation', 'Tailwind CSS'],
     demo: '',
-    repo: 'https://github.com/kesavan-r',
+    repo: 'hhttps://github.com/rkesav786',
   },
   {
     id: 'student',
@@ -190,7 +190,7 @@ export const projects = [
     ],
     tags: ['Electron.js', 'React.js', 'Local Storage'],
     demo: '',
-    repo: 'https://github.com/kesavan-r',
+    repo: 'https://github.com/rkesav786',
   },
 ]
 
