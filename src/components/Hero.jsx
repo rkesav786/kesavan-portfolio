@@ -24,7 +24,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" ref={root} className="relative flex min-h-screen items-center overflow-x-clip pb-16 pt-32 sm:pt-36">
+    <section id="home" ref={root} className="relative flex min-h-screen items-center overflow-x-clip pb-16 pt-24 sm:pt-22">
       <div className="container-x grid items-center gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
         {/* Copy */}
         <div>

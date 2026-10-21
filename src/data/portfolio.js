@@ -12,7 +12,7 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/kesavan-r-12bb9a221/',
   github: 'https://github.com/rkesav786',
   resume: '/Resume_Kesavan.docx', // file lives in /public
-  photo: '/profile.jpg', // file lives in /public
+  photo: '/profile.png', // file lives in /public
   headline: ['Frontend developer building', 'fast, scalable web apps.'],
   summary:
     'I have 1.6+ years of experience engineering high-performance React.js and Next.js applications, from role-based dashboards and payment workflows to adaptive video streaming. I care about modular UIs, secure API integration and pages that feel instant.',
