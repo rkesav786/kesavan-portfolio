@@ -24,8 +24,8 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" ref={root} className="relative flex min-h-screen items-center overflow-x-clip pb-16 pt-24 sm:pt-22">
-      <div className="container-x grid items-center gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
+    <section id="home" ref={root} className="relative flex min-h-[calc(100svh-6rem)] items-center overflow-x-clip pb-12 pt-24 sm:pt-22">
+      <div className="container-x grid items-center gap-8 sm:gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start lg:gap-10">
         {/* Copy */}
         <div>
           <div
@@ -98,7 +98,7 @@ export default function Hero() {
         </div>
 
         {/* Avatar */}
-        <div className="mx-auto w-full max-w-[22rem] lg:max-w-md">
+        <div className="mx-auto w-full max-w-[22rem] lg:mt-16 lg:max-w-md">
           <div data-hero="avatar" className="relative aspect-square">
             {/* Rotating gradient ring */}
             <div className="absolute inset-0 animate-spin-slow rounded-full bg-[conic-gradient(from_0deg,#6366f1,#22d3ee,transparent_55%,#6366f1)] opacity-90" />

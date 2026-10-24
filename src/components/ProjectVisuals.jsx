@@ -68,12 +68,36 @@ export function MicrofrontendVisual() {
   )
 }
 
+export function InfrastructureVisual() {
+  return (
+    <div className="flex h-full flex-col justify-center gap-4 p-5">
+      <div className="flex items-center justify-center gap-2">
+        {['React app', 'Docker', 'Amazon ECR', 'AWS Lambda'].map((step, i) => (
+          <div key={step} className="flex min-w-0 flex-1 items-center gap-2">
+            <span className="grid min-h-12 flex-1 place-items-center rounded-lg border border-brand-indigo/30 bg-brand-deep/10 px-2 text-center text-[10px] font-semibold text-zinc-200 sm:text-xs">
+              {step}
+            </span>
+            {i < 3 && <span aria-hidden="true" className="text-brand-cyan">→</span>}
+          </div>
+        ))}
+      </div>
+      <div className="rounded-xl border border-brand-cyan/25 bg-brand-cyan/5 p-3">
+        <p className="text-center text-[10px] font-semibold uppercase tracking-wider text-brand-cyan">Global delivery</p>
+        <div className="mt-2 flex items-center justify-center gap-2 text-[10px] font-medium text-zinc-300 sm:text-xs">
+          <span className="rounded-md border border-white/10 bg-white/5 px-2 py-1">Route 53 + Hostinger DNS</span>
+          <span aria-hidden="true" className="text-brand-cyan">→</span>
+          <span className="rounded-md border border-white/10 bg-white/5 px-2 py-1">CloudFront + ACM SSL</span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export function DesktopVisual() {
   const rows = [
-    ['Aarav K.', 'Class 10-A'],
-    ['Divya S.', 'Class 9-B'],
-    ['Karthik M.', 'Class 10-A'],
-    ['Meena R.', 'Class 8-C'],
+    ['Student records', 'Local'],
+    ['Administrative data', 'Managed'],
+    ['Student tracking', 'Desktop'],
   ]
   return (
     <div className="flex h-full items-center p-5">
@@ -82,16 +106,13 @@ export function DesktopVisual() {
           <span className="h-2.5 w-2.5 rounded-full bg-rose-400/80" />
           <span className="h-2.5 w-2.5 rounded-full bg-amber-400/80" />
           <span className="h-2.5 w-2.5 rounded-full bg-emerald-400/80" />
-          <span className="ml-3 rounded bg-white/5 px-2 py-0.5 text-[10px] text-zinc-500">Search students</span>
-          <span className="ml-auto rounded bg-brand-deep/30 px-2 py-0.5 text-[10px] font-semibold text-brand-indigo">
-            Export
-          </span>
+          <span className="ml-3 rounded bg-white/5 px-2 py-0.5 text-[10px] text-zinc-500">Student management</span>
         </div>
         <ul className="divide-y divide-white/5 text-xs">
-          {rows.map(([name, cls]) => (
-            <li key={name} className="flex justify-between px-3 py-2.5 text-zinc-400">
+          {rows.map(([name, type]) => (
+            <li key={name} className="flex justify-between px-3 py-3 text-zinc-400">
               <span className="font-medium text-zinc-200">{name}</span>
-              <span>{cls}</span>
+              <span>{type}</span>
             </li>
           ))}
         </ul>
@@ -103,5 +124,6 @@ export function DesktopVisual() {
 export const VISUALS = {
   streaming: StreamingVisual,
   microfrontend: MicrofrontendVisual,
+  infrastructure: InfrastructureVisual,
   desktop: DesktopVisual,
 }

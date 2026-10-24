@@ -10,8 +10,8 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const links = [
   { label: 'Email', value: profile.email, href: `mailto:${profile.email}`, Icon: Mail },
   { label: 'Phone', value: profile.phone, href: profile.phoneHref, Icon: Phone },
-  { label: 'LinkedIn', value: 'linkedin.com/in/kesavan-r', href: profile.linkedin, Icon: Linkedin, external: true },
-  { label: 'GitHub', value: 'github.com/kesavan-r', href: profile.github, Icon: Github, external: true },
+  { label: 'LinkedIn', value: 'linkedin.com/in/kesavan-r-12bb9a221', href: profile.linkedin, Icon: Linkedin, external: true },
+  { label: 'GitHub', value: 'github.com/rkesav786', href: profile.github, Icon: Github, external: true },
 ]
 
 function Field({ label, error, children, htmlFor }) {

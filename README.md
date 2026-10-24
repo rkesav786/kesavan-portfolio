@@ -15,8 +15,8 @@ npm run build      # production build in /dist
 | What | Where |
 | --- | --- |
 | All text, skills, experience, projects, links | `src/data/portfolio.js` |
-| Profile photo | replace `public/profile.jpg` (square, 800×800 works well) |
-| Resume download | replace `public/Kesavan_R_Resume.docx` (or point `profile.resume` at a PDF) |
+| Profile photo | replace `public/profile.jpg` (square, 640×640 works well) |
+| Resume download | replace `public/Kesavan_R_Resume.pdf` and keep `profile.resume` in `src/data/portfolio.js` pointed at it |
 | Project demo / GitHub links | `demo` and `repo` fields in `src/data/portfolio.js` (empty `demo` shows "Demo coming soon") |
 
 ## Contact form

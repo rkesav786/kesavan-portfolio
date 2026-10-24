@@ -131,7 +131,7 @@ export default function Projects() {
       <div className="container-x">
         <SectionHeading
           title="Featured projects"
-          description="Proof-of-concept builds where I explored streaming, scalable architecture and desktop tooling."
+          description="Projects spanning cloud deployment, adaptive video streaming, modular frontend architecture, and desktop applications."
         />
         <div className="space-y-8">
           {projects.map((p, i) => (
